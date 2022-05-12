@@ -33,7 +33,7 @@ export function getParcelText(parcel: Parcel, name: string): string {
 
 export function getParcelImage(parcel: Parcel): string {
   return (
-    'https://api.decentraland.org/v1/parcels/' +
+    'https://api.ftc.tc/v1/parcels/' +
     parcel.x.toString() +
     '/' +
     parcel.y.toString() +

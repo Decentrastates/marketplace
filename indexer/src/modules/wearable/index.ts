@@ -51,7 +51,7 @@ import { getCatalystBase } from '../catalyst'
 import { getURNNetwork } from '../network'
 
 export function buildWearableFromNFT(nft: NFT): WearableEntity {
-  // https://wearable-api.decentraland.org/v2/standards/erc721-metadata/collections/halloween_2019/wearables/funny_skull_mask/1
+  // https://wearable-api.ftc.tc/v2/standards/erc721-metadata/collections/halloween_2019/wearables/funny_skull_mask/1
   let wearableId = getWearableIdFromTokenURI(nft.tokenURI)
   if (wearableId == '') {
     log.error('Coud not get a wearable id from tokenURI {} and nft {}', [
@@ -224,7 +224,7 @@ function findWearable(id: string, collection: Wearable[]): WearableEntity {
 export function getWearableIdFromTokenURI(tokenURI: string): string {
   let splitted = tokenURI.split('/')
 
-  // https://wearable-api.decentraland.org/v2/standards/erc721-metadata/collections/halloween_2019/wearables/funny_skull_mask/1
+  // https://wearable-api.ftc.tc/v2/standards/erc721-metadata/collections/halloween_2019/wearables/funny_skull_mask/1
   // or
   // dcl://halloween_2019/vampire_feet/55
   if (splitted.length == 11 || splitted.length == 5) {

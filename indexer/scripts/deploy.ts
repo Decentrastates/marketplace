@@ -6,9 +6,8 @@ enum Network {
 }
 
 const graphByNetwork: Record<Network, string> = {
-  [Network.MAINNET]: process.env.GRAPH_NAME || 'decentraland/marketplace',
-  [Network.ROPSTEN]:
-    process.env.GRAPH_NAME || 'decentraland/marketplace-ropsten'
+  [Network.MAINNET]: process.env.GRAPH_NAME || 'decentrastates/marketplace',
+  [Network.ROPSTEN]: process.env.GRAPH_NAME || 'decentrastates/marketplace-ropsten'
 }
 
 // TODO: Handle ctrl+C
